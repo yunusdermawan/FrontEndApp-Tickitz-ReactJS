@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script>
+    tailwind.config = {
+        theme: {
+            extends: {
+                colors: {
+                    primary : '#5F2EEA',
+                }
+            },
+        },
+        plugins: [],
+    }
+  </script> -->
+  <title>View All</title>
+</head>
+<body>
+  <header class="mb-7">
+    <div class="container mx-auto px-10 lg:px-40 pt-7 flex items-center justify-between ">
+        <nav>
+            <div class="md:flex items-center justify-end gap-7">
+                <a href="index.html"><img class="me-7" src="../assets/Vector.png" alt="logo"></a>
+                <div class="hidden md:flex gap-5 ">
+                    <a class="font-medium text-gray-500 ms-8" href="index.html">Home</a>
+                    <a class="font-medium text-gray-500 ms-8" href="" >List Movie</a>
+                </div>
+            </div>
+        </nav>
+        <div class="flex md:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden md:flex items-center justify-end gap-7">
+            <a href="#"><i class="fas fa-search me-5"></i></a>
+            <a class="hover:group" href="profile.html"><img src="../assets/profile.png" alt="profile"></a>
+            <div class="flex flex-col justify-center bg-gray-100 border-2 border-gray-300 rounded h-36 w-44 absolute top-14 gap-1 focus-group:flex hidden">
+                <span class="hover:bg-gray-500 hover:text-white"><a class="ms-5" href="#">Update Profile</a></span>
+                <span class="hover:bg-gray-500 hover:text-white"><a class="ms-5" href="#">Change Password</a></span>
+                <span class="hover:bg-gray-500 hover:text-white"><a class="ms-5" href="#">Log Out</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="hidden grid-cols-1 divide-y text-center">
+        <div class="pt-5"></div>
+        <div class="py-3 font-medium hover:bg-gray-100"><a href="index.html">Home</a></div>
+        <div class="py-3 font-medium hover:bg-gray-100"><a href="#">List Movie</a></div>
+        <div class="py-3 font-medium hover:bg-gray-100"><a href="#">Sign In</a></div>
+        <div class="pt-7 text-gray-400">&copy; 2020 Tickitz. All rights reserved.</div>
+      </div>
+  </header>
+  <main class="bg-gray-100 pb-10">
+    <section id="top" class="container mx-auto px-10 lg:px-40 pt-7">
+        <div class="flex flex-col md:flex-row justify-between pb-5">
+            <h1 class="font-medium">List Movie</h1>
+            <div class="flex justify-between md:justify-start items-center pt-4 md:pt-0">
+                <div id="sort" class="mr-5">
+                    <a class="border-2 rounded-full md:rounded-lg px-3 md:px-5 py-1 bg-white">
+                        <span class="mr-3 md:mr-7">Sort</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </div>
+                <div id="sort">
+                    <input class="border-2 rounded-full md:rounded-lg px-5 py-1 bg-white" type="text" placeholder="Search Movie Name">
+                </div>
+            </div>
+        </div>
+        <div class="inline">
+            <a href="hello.html" class="px-5 border-2 mr-2 bg-primary">September</a>
+            <a href="" class="px-5 border-2 mr-2">Oktober</a>
+            <a href="" class="px-5 hidden md:inline border-2 mr-2">November</a>
+            <a href="" class="px-5 hidden md:inline border-2 mr-2">Desember</a>
+            <a href="" class="px-5 hidden md:inline border-2 mr-2">January</a>
+            <a href="" class="xl:inline hidden px-5 border-2 mr-2">March</a>
+            <a href="" class="xl:inline hidden px-5 border-2 mr-2">April</a>
+            <a href="" class="xl:inline hidden px-5 border-2 mr-2">May</a>
+        </div>
+    </section>
+    <section id="mid" class="container mx-auto px-10 lg:px-40 pt-7">
+        <div class="bg-white px-10 rounded">
+            <span class="inline-grid grid-cols-2 md:grid-cols-4 gap-4 py-10">
+                <span class="border-2 rounded">
+                    <div class="p-2 md:p-5">
+                        <img class="hover:opacity-50" src="../assets/movie-banner4.png" alt="">
+                        <div class="text-center pt-3 pb-2">
+                            <h1 class="font-medium text-sm pb-1">Black Widow</h1>
+                            <p class="text-xs text-gray-400 pb-5 ">Action, Adventure, Sci-Fi</p>
+                            <a class="border-2 px-6 py-1 rounded" href="">Detail</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="border-2 rounded">
+                    <div class="p-2 md:p-5">
+                        <img class="hover:opacity-50" src="../assets/movie-banner4.png" alt="">
+                        <div class="text-center pt-3 pb-2">
+                            <h1 class="font-medium text-sm pb-1">Black Widow</h1>
+                            <p class="text-xs text-gray-400 pb-5 ">Action, Adventure, Sci-Fi</p>
+                            <a class="border-2 px-6 py-1 rounded" href="">Detail</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="border-2 rounded">
+                    <div class="p-2 md:p-5">
+                        <img class="hover:opacity-50" src="../assets/movie-banner4.png" alt="">
+                        <div class="text-center pt-3 pb-2">
+                            <h1 class="font-medium text-sm pb-1">Black Widow</h1>
+                            <p class="text-xs text-gray-400 pb-5 ">Action, Adventure, Sci-Fi</p>
+                            <a class="border-2 px-6 py-1 rounded" href="">Detail</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="border-2 rounded">
+                    <div class="p-2 md:p-5">
+                        <img class="hover:opacity-50" src="../assets/movie-banner4.png" alt="">
+                        <div class="text-center pt-3 pb-2">
+                            <h1 class="font-medium text-sm pb-1">Black Widow</h1>
+                            <p class="text-xs text-gray-400 pb-5 ">Action, Adventure, Sci-Fi</p>
+                            <a class="border-2 px-6 py-1 rounded" href="">Detail</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="border-2 rounded">
+                    <div class="p-2 md:p-5">
+                        <img class="hover:opacity-50" src="../assets/movie-banner4.png" alt="">
+                        <div class="text-center pt-3 pb-2">
+                            <h1 class="font-medium text-sm pb-1">Black Widow</h1>
+                            <p class="text-xs text-gray-400 pb-5 ">Action, Adventure, Sci-Fi</p>
+                            <a class="border-2 px-6 py-1 rounded" href="">Detail</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="border-2 rounded">
+                    <div class="p-2 md:p-5">
+                        <img class="hover:opacity-50" src="../assets/movie-banner4.png" alt="">
+                        <div class="text-center pt-3 pb-2">
+                            <h1 class="font-medium text-sm pb-1">Black Widow</h1>
+                            <p class="text-xs text-gray-400 pb-5 ">Action, Adventure, Sci-Fi</p>
+                            <a class="border-2 px-6 py-1 rounded" href="">Detail</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="border-2 rounded">
+                    <div class="p-2 md:p-5">
+                        <img class="hover:opacity-50" src="../assets/movie-banner4.png" alt="">
+                        <div class="text-center pt-3 pb-2">
+                            <h1 class="font-medium text-sm pb-1">Black Widow</h1>
+                            <p class="text-xs text-gray-400 pb-5 ">Action, Adventure, Sci-Fi</p>
+                            <a class="border-2 px-6 py-1 rounded" href="">Detail</a>
+                        </div>
+                    </div>
+                </span>
+                <span class="border-2 rounded">
+                    <div class="p-2 md:p-5">
+                        <img class="hover:opacity-50" src="../assets/movie-banner4.png" alt="">
+                        <div class="text-center pt-3 pb-2">
+                            <h1 class="font-medium text-sm pb-1">Black Widow</h1>
+                            <p class="text-xs text-gray-400 pb-5 ">Action, Adventure, Sci-Fi</p>
+                            <a class="border-2 px-6 py-1 rounded" href="">Detail</a>
+                        </div>
+                    </div>
+                </span>
+              </span>
+        </div>
+        
+        
+    </section>
+    <section id="bot" class="pt-10 flex justify-center">
+        <div class="w-40">
+            <div class="grid grid-cols-4 gap-4">
+                <div class="w-10 h-10 border-2 rounded flex justify-center items-center">1</div>
+                <div class="w-10 h-10 border-2 rounded flex justify-center items-center">2</div>
+                <div class="w-10 h-10 border-2 rounded flex justify-center items-center">3</div>
+                <div class="w-10 h-10 border-2 rounded flex justify-center items-center">4</div>
+            </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container mx-auto px-10 lg:px-40 pt-7">
+        <div class="grid md:grid-cols-4 pr-5 md:pr-0">
+            <div class="pr-5">
+                <img src="../assets/Vector.png" alt="">
+                <p class="text-gray-500 text-sm">Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
+            <div class="pl-0 md:pl-16 pt-5 md:pt-0 mt-5 md:mt-0">
+                <h1 class="font-medium text-sm">Explore</h1>
+                <a class="inline md:block pt-3 text-xs pr-10 md:pr-0" href="">Home</a>
+                <a class="inline md:block pt-2 text-xs" href="">List Movie</a>
+            </div>
+            <div class="mt-5 md:mt-0">
+                <h1 class="font-medium text-sm pt-5 md:pt-0">Our Sponsor</h1>
+                <div class="flex items-center md:block">
+                    <img class="inline md:block pt-3 mr-5 w-20" src="../assets/Vector2.png" alt="">
+                    <img class="inline md:block pt-3 mr-5 w-20" src="../assets/Vector4.png" alt="">
+                    <img class="inline md:block pt-3 mr-5 w-20" src="../assets/Vector3.png" alt="">
+                </div>
+            </div>
+            <div class="pt-5 md:pt-0 mt-5 md:mt-0">
+                <h1 class="font-medium text-sm">Follow us</h1>
+                <div class="flex gap-10 md:gap-0 md:justify-around md:block">
+                    <a class="block pt-3 text-xs" href="">
+                        <i class="fa-brands fa-facebook-f inline"></i>
+                        <p class="hidden md:inline">Tickitz Cinema id</p>
+                    </a>
+                    <a class="block pt-3 text-xs" href="">
+                        <i class="fa-brands fa-instagram inline"></i>
+                        <p class="hidden md:inline">tickitz.id</p>
+                    </a>
+                    <a class="block pt-3 text-xs" href="">
+                        <i class="fa-brands fa-twitter inline"></i>
+                        <p class="hidden md:inline">tickitz.id</p>
+                    </a>
+                    <a class="block pt-3 text-xs" href="">
+                        <i class="fa-brands fa-youtube inline"></i>
+                        <p class="hidden md:inline">Tickitz Cinema id</p>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="text-center pt-16 pb-10">
+        <p class="text-gray-500">&copy; 2020 Tickitz. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

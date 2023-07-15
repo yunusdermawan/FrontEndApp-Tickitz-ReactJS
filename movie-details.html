@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/movie-details.css">
+
+
+    <title>Movie Details</title>
+  </head>
+  <body>
+    <header class="container mt-5">
+      <nav class="navbar navbar-expand-lg navbar-light pt-4 px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand me-5" href="#">
+            <img src="../../public/assets/images/Vector.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/index.html">Home</a>
+              </li>
+              <li id="dropdown-toggle" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  List Movie
+                </a>
+                <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Upcoming</a></li>
+                  <li><a class="dropdown-item" href="#">Now Showing</a></li>
+                  <li><a class="dropdown-item" href="#">R-Rated</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex pe-5">
+              <button id="signup" class="btn btn-outline-success" type="submit">
+                <a href="../html/signup.html">Sign Up</a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="top" class="p-5">
+        <div class="container px-5 ">
+          <div>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="container">
+                  <div class="movie-frame text-center w-100 px-4 px-sm-2 px-md-0 px-lg-4 py-4">
+                    <img src="../../public/assets/images/movie-banner7.png" alt="movie" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-8">
+                <div class="d-flex flex-column">
+                  <div class="mb-4">
+                    <h4 class="fw-bold">Spider-Man: Homecoming</h4>
+                    <p>Adventure, Action, Sci-Fi</p>
+                  </div>
+                  <div class="d-flex gap-5 info">
+                    <div class="d-flex flex-column gap-3">
+                      <div>
+                        <p>Release date</p>
+                        <h6>June 28, 2017</h6>
+                      </div>
+                      <div>
+                        <p>Duration</p>
+                        <h6>2 hours 13 minutes</h6>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <div>
+                        <p>Directed by</p>
+                        <h6>John Watts</h6>
+                      </div>
+                      <div>
+                        <p>Casts</p>
+                        <h6>Tom Holland, Michael Keatan, Robert Downey Jr...</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="synopsis">
+                  <h6>Synopsis</h6>
+                  <p>Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mid">
+        <div class="container">
+          <div class="text-center py-5">
+            <h5 class="mb-5">Showtimes and Tickets</h5>
+            <div class="d-flex justify-content-center gap-5">
+              <div>
+                <form>
+                  <input type="date" id="schedule" name="schedule">
+                </form>
+              </div>
+              <div>
+                <select name="location" id="location">
+                  <option>Select Location</option>
+                  <option>Purwokerto</option>
+                  <option>Purwodadi</option>
+                  <option>Purwoasri</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="bottom">
+        <div class="container px-5">
+          <div class="container px-5">
+            <div class="row justify-content-between">
+              <div id="booking" class="col-12 col-lg-4 pt-3 w-25 mb-4 mb-lg-0">
+                <div class="d-flex flex-column">
+                  <div class="text-start">
+                    <div class="d-flex justify-content-between gap-3 ms-4 px-2">
+                      <div class="p-2">
+                        <img src="../../public/assets/images/Vector2.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="p-2">
+                        <h6>ebv.id</h6>
+                        <p>Whatever street No.12, South Purwokerto</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-3"><p>08:30am</p></div>
+                      <div class="col-3"><p>10:30am</p></div>
+                      <div class="col-3"><p>12:00pm</p></div>
+                      <div class="col-3"><p>02:00pm</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3"><p>04:30pm</p></div>
+                      <div class="col-3"><p>7:00pm</p></div>
+                      <div class="col-3"><p>08:30pm</p></div>
+                      <div class="col-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between px-4 mt-3">
+                  <p class="fw-bold">Price</p>
+                  <h6>$10.00/seat</h6>
+                </div>
+                <div class="text-center px-4 mb-4">
+                  <form class="book-btn">
+                    <button class="btn">Book now</button>
+                  </form>
+                </div>
+              </div>
+              <div id="booking" class="col-12 col-lg-4 pt-3 w-100 w-lg-25">
+                <div class="d-flex flex-column">
+                  <div class="text-start">
+                    <div class="d-flex justify-content-between gap-3 ms-4 px-2">
+                      <div class="p-2">
+                        <img src="../../public/assets/images/Vector4.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="p-2">
+                        <h6>CineOne21</h6>
+                        <p>Downcare street No. 21,
+                          East Purwokerto</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-3"><p>08:30am</p></div>
+                      <div class="col-3"><p>10:30am</p></div>
+                      <div class="col-3"><p>12:00pm</p></div>
+                      <div class="col-3"><p>02:00pm</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3"><p>04:30pm</p></div>
+                      <div class="col-3"><p>7:00pm</p></div>
+                      <div class="col-3"><p>08:30pm</p></div>
+                      <div class="col-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between px-4 mt-3">
+                  <p class="fw-bold">Price</p>
+                  <h6>$10.00/seat</h6>
+                </div>
+                <div class="text-center px-4 mb-4">
+                  <form class="book-btn">
+                    <button class="btn">Book now</button>
+                  </form>
+                </div>
+              </div>
+              <div id="booking" class="col-12 col-lg-4 pt-3 w-100 w-lg-25">
+                <div class="d-flex flex-column">
+                  <div class="text-start">
+                    <div class="d-flex justify-content-between gap-3 ms-4 px-2">
+                      <div class="p-2">
+                        <img src="../../public/assets/images/Vector3.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="p-2">
+                        <h6>hiflix Cinema</h6>
+                        <p>Colonel street No. 2, East Purwokerto</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-3"><p>08:30am</p></div>
+                      <div class="col-3"><p>10:30am</p></div>
+                      <div class="col-3"><p>12:00pm</p></div>
+                      <div class="col-3"><p>02:00pm</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3"><p>04:30pm</p></div>
+                      <div class="col-3"><p>7:00pm</p></div>
+                      <div class="col-3"><p>08:30pm</p></div>
+                      <div class="col-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between px-4 mt-3">
+                  <p class="fw-bold">Price</p>
+                  <h6>$10.00/seat</h6>
+                </div>
+                <div class="text-center px-4 mb-4">
+                  <form class="book-btn">
+                    <button class="btn">Book now</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between py-5">
+              <div id="booking" class="col-12 col-lg-4 pt-3 w-100 w-lg-25">
+                <div class="d-flex flex-column">
+                  <div class="text-start">
+                    <div class="d-flex justify-content-between gap-3 ms-4 px-2">
+                      <div class="p-2">
+                        <img src="../../public/assets/images/Vector2.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="p-2">
+                        <h6>ebv.id</h6>
+                        <p>Whatever street No.12, South Purwokerto</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-3"><p>08:30am</p></div>
+                      <div class="col-3"><p>10:30am</p></div>
+                      <div class="col-3"><p>12:00pm</p></div>
+                      <div class="col-3"><p>02:00pm</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3"><p>04:30pm</p></div>
+                      <div class="col-3"><p>7:00pm</p></div>
+                      <div class="col-3"><p>08:30pm</p></div>
+                      <div class="col-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between px-4 mt-3">
+                  <p class="fw-bold">Price</p>
+                  <h6>$10.00/seat</h6>
+                </div>
+                <div class="text-center px-4 mb-4">
+                  <form class="book-btn">
+                    <button class="btn">Book now</button>
+                  </form>
+                </div>
+              </div>
+              <div id="booking" class="col-12 col-lg-4 pt-3 w-100 w-lg-25">
+                <div class="d-flex flex-column">
+                  <div class="text-start">
+                    <div class="d-flex justify-content-between gap-3 ms-4 px-2">
+                      <div class="p-2">
+                        <img src="../../public/assets/images/Vector4.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="p-2">
+                        <h6>CineOne21</h6>
+                        <p>Downcare street No. 21,
+                          East Purwokerto</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-3"><p>08:30am</p></div>
+                      <div class="col-3"><p>10:30am</p></div>
+                      <div class="col-3"><p>12:00pm</p></div>
+                      <div class="col-3"><p>02:00pm</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3"><p>04:30pm</p></div>
+                      <div class="col-3"><p>7:00pm</p></div>
+                      <div class="col-3"><p>08:30pm</p></div>
+                      <div class="col-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between px-4 mt-3">
+                  <p class="fw-bold">Price</p>
+                  <h6>$10.00/seat</h6>
+                </div>
+                <div class="text-center px-4 mb-4">
+                  <form class="book-btn">
+                    <button class="btn">Book now</button>
+                  </form>
+                </div>
+              </div>
+              <div id="booking" class="col-12 col-lg-4 pt-3 w-100 w-lg-25">
+                <div class="d-flex flex-column">
+                  <div class="text-start">
+                    <div class="d-flex justify-content-between gap-3 ms-4 px-2">
+                      <div class="p-2">
+                        <img src="../../public/assets/images/Vector3.png" alt="" class="img-fluid">
+                      </div>
+                      <div class="p-2">
+                        <h6>hiflix Cinema</h6>
+                        <p>Colonel street No. 2, East Purwokerto</p>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-3"><p>08:30am</p></div>
+                      <div class="col-3"><p>10:30am</p></div>
+                      <div class="col-3"><p>12:00pm</p></div>
+                      <div class="col-3"><p>02:00pm</p></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-3"><p>04:30pm</p></div>
+                      <div class="col-3"><p>7:00pm</p></div>
+                      <div class="col-3"><p>08:30pm</p></div>
+                      <div class="col-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between px-4 mt-3">
+                  <p class="fw-bold">Price</p>
+                  <h6>$10.00/seat</h6>
+                </div>
+                <div class="text-center px-4 mb-4">
+                  <form class="book-btn">
+                    <button class="btn">Book now</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+            <div class="d-flex py-5 justify-content-between align-items-center">
+              <div class="border-bottom border-4 border-ligth w-50"></div>
+              <p class="w-50 text-center">view more</p>
+              <div class="border-bottom border-4 border-ligth w-50"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <div>
+        <div id="footer" class="container p-5">
+          <div class="row">
+            <div class="col-0 col-md-3 d-none d-md-block">
+              <div class="container">
+                <img src="../../public/assets/images/Vector.png" alt="logo" class="mb-4 img-fluid">
+                <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 text-start">
+              <h6>Explore</h6>
+              <div>
+                <ul id="footer-dropdown" class="list-unstyled fs-6">
+                  <li>Home</li>
+                  <li>List Movie</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-0 col-md-3 d-none d-md-block">
+              <h6>Our Sponsor</h6>
+              <div class="d-block">
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <img src="../../public/assets/images/Vector2.png" alt="ebu.id" class="img-fluid">
+                  </li>
+                  <li class="mb-2">
+                    <img src="../../public/assets/images/Vector3.png" alt="hiflix" class="img-fluid">
+                  </li>
+                  <li class="mb-2">
+                    <img src="../../public/assets/images/Vector4.png" alt="cineone21" class="img-fluid">
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <h6>Follow Us</h6>
+              <div class="text-start">
+                <div class="d-flex align-items-start">
+                  <div class="me-3"><i class="fa-brands fa-facebook-f"></i></div>
+                  <div><p>Tickitz Cinema id</p></div>
+                </div>
+                <div class="d-flex align-items-start">
+                  <div class="me-3"><i class="fa-brands fa-instagram"></i></div>
+                  <div><p>tickitz.id</p></div>
+                </div>
+                <div class="d-flex align-items-start">
+                  <div class="me-3"><i class="fa-brands fa-twitter"></i></div>
+                  <div><p>tickitz.id</p></div>
+                </div>
+                <div class="d-flex align-items-start">
+                  <div class="me-3"><i class="fa-brands fa-youtube"></i></div>
+                  <div><p>Tickitz Cinema id</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center pt-5">
+            &copy; 2020 Tickitz. All Rights Reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
