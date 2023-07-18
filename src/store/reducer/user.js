@@ -22,7 +22,8 @@ const userSlice = createSlice({
                 ...state,
                 isAuth: false,
                 token: '',
-                data: {}
+                data: {},
+                role: ''
             }
         },
         addData(state, actions) {

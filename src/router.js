@@ -5,7 +5,7 @@ import Movie from "./page/movie"
 import MovieDetail from "./page/movie-detail"
 import SignIn from "./page/sign-in"
 import SignUp from "./page/sign-up"
-import Admin from "./page/admin"
+import Admin from "./page/manage-movie"
 
 
 function Router() {

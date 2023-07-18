@@ -22,12 +22,6 @@ function SignIn() {
         setFormData(inputVal)
     }
 
-    useEffect(() => {
-        if(isAuth) {
-            navigate('/')
-        }
-    }, [isAuth])
-
     const handleSubmit = () => {
         api({
             method: 'POST',
@@ -35,11 +29,13 @@ function SignIn() {
             data: formData
         }).then(({ data }) => {
             const token = data.token
-            
+            const role = data.role
             Show('You succesfully logged in', 'success')
+            console.log(data)
             setTimeout(()=>{
-                dispatch(login(token))
+                dispatch(login({token, role}))
                 navigate('/')
+                
             }, 4500)
         }).catch((err) => {
             const axiosErr = err.response.data
@@ -53,6 +49,12 @@ function SignIn() {
         })
         
     }
+
+    useEffect(() => {
+        if(isAuth) {
+            navigate('/')
+        }
+    }, [isAuth])
 
     return (
         <>

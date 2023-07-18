@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Header from '../../component/header'
+import HeaderAdmin from '../../component/header-admin'
 import Footer from '../../component/footer'
 import Card from '../../component/card'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,11 +8,16 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios'
 import card1 from '../../assets/movie-banner1.png'
 import ButtonGroups from '../../component/button-groups'
+import { useSelector } from 'react-redux'
 
 function Movie() { 
 
   const [genres, setGenres] = useState([])
   const [movies, setMovies] = useState([])
+
+  const { role } = useSelector((s) => {
+    return s.users.role
+  })
 
   const getGenres = async () => {
     try {
@@ -39,7 +45,7 @@ function Movie() {
 
   return (
     <>
-        <Header />
+        { role === 'admin' ? <HeaderAdmin /> : <Header /> }
         <main className="bg-gray-100 pb-10">
           <section id="top" className="container mx-auto px-10 lg:px-40 pt-7">
             <div className="flex flex-col md:flex-row justify-between pb-5">

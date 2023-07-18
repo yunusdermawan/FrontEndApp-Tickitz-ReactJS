@@ -20,14 +20,14 @@ function HeaderAdmin() {
             <Link to="/">
               <img className="me-7 xl:w-full" src={logo} alt="logo" />
             </Link>
-            <div className="hidden md:flex gap-5 ">
-              <Link className="font-medium text-gray-500 ms-8" to="/">
+            <div className="hidden md:flex gap-3 ">
+              <Link className="font-medium text-gray-500 ms-2" to="/">
                 Dashboard
               </Link>
-              <Link className="font-medium text-gray-500 ms-8" to="/movie">
+              <Link className="font-medium text-gray-500 ms-3" to="/manage">
                 Manage Movie
               </Link>
-              <Link className="font-medium text-gray-500 ms-8" to="/movie">
+              <Link className="font-medium text-gray-500 ms-3" to="/movie">
                 Manage Schedule
               </Link>
             </div>
